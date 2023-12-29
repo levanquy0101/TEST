@@ -1,0 +1,90 @@
+#container{
+    margin: 0 5vw;
+}
+#container .filter-total{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    overflow-x: auto;
+}
+#container .filter-total .all{
+    padding: 4px 10px;
+    margin: 6px 4px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    white-space: nowrap; /* Ngăn chữ xuống dòng */   
+}
+#container .field{
+    margin-bottom: 6px;
+}
+#container .field ul{
+    margin-top: 4px;
+    margin-left: 2px;
+}
+#container .field ul li{
+    display: inline-block;
+    margin: 2px;
+    background-color: azure;
+    padding: 6px 16px;
+    border-radius: 10px;
+    color: black;
+    border:1px solid #dcdcdc;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+}
+#container .field ul li:hover{
+    border-color: blue;
+    color: blue;
+}
+#container .product-box-all{
+    background-color: #f0f8ff;
+    /* padding: 8px; */
+}
+#container .product-box-all ul{
+    margin: 4px;
+}
+#container .product-box-all ul li{
+    display: inline-block;
+    width:250px;
+    height: 350px;
+    border: 1px solid brown;
+    margin: 2px;
+}
+/* Tạo nút scroll top */
+.scroll-top{
+    width: 40px;
+    height: 50px;
+    border: 1px solid greenyellow;
+    background-color: greenyellow;
+    display: flex;
+    bottom: 1rem;
+    position: fixed;
+    right: 2rem;
+    border-radius: 1em;
+}
+.scroll-top img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width : 980px) {
+    .header-top ul li{
+      display: none;
+    }
+    .header-top ul{
+      justify-content: space-between;
+    }
+    #container{
+      margin: 0 1vw;
+    }
+  }
+  @media screen and (max-width : 391px){
+    .scroll-top{
+        width: 35px;
+        height: 45px;
+        bottom: 0.5rem;
+        right: 1rem;
+    }
+  }

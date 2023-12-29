@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  list-style: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+/* CSS cho phần đầu trang gồm banner header, header top, header main */
+#header{
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #ffd400,yellow);
+}
+.ion-menu{
+  font-size: x-large;
+  display: none;
+}
+.header-banner-slider{
+  width: 100%;
+  height: 40px;
+  /* background-color: #111111; */
+  background: url("./frontend/img/banner-top.jpg") center/cover no-repeat;
+  text-align: center;
+  overflow-x: hidden;
+}
+.animated-text {
+  white-space: nowrap; /* Ngăn chữ xuống dòng */
+  animation: slideIn 10s linear infinite; /* Lặp lại vô hạn */
+  font-weight: bold;
+  line-height: 40px;
+  font-size: large;
+  color: white;
+  text-transform: uppercase;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+.header-banner-slider img{
+  width: 100%;
+  height: 100%;
+}
+.header-top{
+  width: 100%;
+  background-color: black;
+  position: sticky;
+  top: 0;
+}
+.header-top ul{
+  display: flex;
+  justify-content: center;
+}
+.header-top ul li{
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 1em;
+}
+.header-top ul li:nth-child(1){
+  font-size: x-large;
+  font-weight: bold;
+}
+.header-top ul li:nth-child(1) a{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header-top ul li:nth-child(5){
+  color: white;
+}
+.header-top ul li a{
+  color: white;
+  /* display: block; */
+}
+.header-top input {
+  padding: 7px;
+  width: 275px;
+  border-radius: 4px;
+}
+.header-main{
+  height: auto;
+}
+.header-main ul{
+  display: flex;
+  justify-content: space-around;
+}
+/* .header-main ul li{
+} */
+.header-main ul li:hover{
+  background-color: whitesmoke;
+  border-radius: 4px;
+}
+.header-main ul li a{
+  padding: 8px 12px;
+  color: black;
+  font-size: small;
+  font-weight: bold;
+  display: inline-block;
+}
+.header-main ul li img{
+  width: 20px;
+}
+/* CSS cho phần banner giới thiệu trang web và sản phẩm */
+#slider-banner-item{
+  width: 100%;
+  height: 300px;
+  background-color: aliceblue;
+  margin: 10px 0;
+  text-align: center;
+}
+#slider-banner-item img{
+  width: 90%;
+  height: 100%;
+}
+#footer{
+  background-color: #ffd400;
+}
+
+
+@media screen and (max-width : 980px) {
+  .header-top ul li{
+    display: none;
+  }
+  .header-top ul li:nth-child(1){
+    display: inline-block;
+  }
+  .header-top ul li:nth-child(6){
+    display: inline-block;
+  }
+  .header-top ul{
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width : 391px) {
+  .header-top ul{
+    justify-content: space-between;
+  }
+  .header-main ul li a{
+    font-size: x-small;
+    padding: 4px 6px;
+  }
+  .animated-text{
+    font-size: small;
+  }
+}
+
+
