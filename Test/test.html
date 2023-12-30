@@ -3,46 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sticky Box</title>
+  <title>Document</title>
   <style>
-    body {
-  margin: 0;
-}
-
-.container {
-  display: flex;
-}
-
-.main-content {
-  flex-grow: 1;
-  padding: 20px;
-  height: 100vh;
-  background-color: aqua;
-}
-
-.sticky-box {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 20%; /* Hiển thị phần tử fixed khi cuộn đạt 20% */
-  background-color: #f1f1f1;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    .triangle {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent; /* Độ rộng và màu sắc cho cạnh bên trái */
+  border-right: 7px solid transparent; /* Độ rộng và màu sắc cho cạnh bên phải */
+  border-bottom: 12px solid red; /* Độ rộng và màu sắc cho cạnh dưới */
 }
 
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="main-content">
-      Nội dung chính của trang web
-      
-      <!-- ... -->
-    </div>
-
-    <div class="sticky-box">
-      Nội dung của phần tử fixed
-      Sticky Box Content
-    </div>
-  </div>
+  <div class="triangle"></div>
 </body>
 </html>

@@ -106,28 +106,31 @@ transform: translateY(40%);
     .header-top ul{
       justify-content: space-between;
     }
-    #container{
+    /* #container{
       margin: 0 1vw;
-    }
+    } */
     #container .field ul li{
         min-width: 170px;
         font-size: 0.75rem;
     }
   }
 @media screen and (max-width : 415px){
-.btn{
-    width: 25px;
-    height: 40px;
-    bottom: 0.5rem;
-    right: 1rem;
-}
-.scroll{
-    width: 6px;
-    height: 10px;
-}
-#container .field ul li{
-    min-width: 140px;
-    font-size: 0.7rem;
-}
+    #container{
+    margin: 0 1vw;
+    }
+    .btn{
+        width: 25px;
+        height: 40px;
+        bottom: 0.5rem;
+        right: 1rem;
+    }
+    .scroll{
+        width: 6px;
+        height: 10px;
+    }
+    #container .field ul li{
+        min-width: 140px;
+        font-size: 0.7rem;
+    }
 }
 
