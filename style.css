@@ -14,10 +14,10 @@ html{
   margin-bottom: 10px;
   background: linear-gradient(to right, #ffd400,yellow);
 }
-.ion-menu{
+/* .ion-menu{
   font-size: x-large;
   display: none;
-}
+} */
 .header-banner-slider{
   width: 100%;
   height: 40px;
@@ -52,6 +52,7 @@ html{
   background-color: black;
   position: sticky;
   top: 0;
+  height: 50px;
 }
 .header-top ul{
   display: flex;
@@ -74,12 +75,18 @@ html{
 }
 .header-top ul li a{
   color: white;
-  /* display: block; */
 }
 .header-top input {
   padding: 7px;
   width: 275px;
   border-radius: 4px;
+}
+.header-top .menu{
+  display: none;
+}
+.header-top .menu img{
+
+
 }
 .header-main{
   height: auto;
@@ -125,11 +132,15 @@ html{
   .header-top ul li{
     display: none;
   }
-  .header-top ul li:nth-child(1){
+  .header-top ul li:first-child{
     display: inline-block;
   }
-  .header-top ul li:nth-child(6){
+  /* .header-top ul li:nth-child(6){
     display: inline-block;
+  } */
+  .header-top ul li:last-child{
+    display: flex;
+    align-items: center;
   }
   .header-top ul{
     justify-content: space-between;
