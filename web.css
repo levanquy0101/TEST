@@ -7,11 +7,13 @@
     top: 0;
     background-color: white;
     overflow-x: auto;
+    padding: 4px 0;
+    border-bottom: 2px solid yellowgreen;
 }
 #container .filter-total .all{
     padding: 4px 10px;
     margin: 6px 4px;
-    border: 1px solid black;
+    border: 1px solid #808080;
     border-radius: 5px;
     display: flex;
     white-space: nowrap; /* Ngăn chữ xuống dòng */   
@@ -56,7 +58,7 @@
 }
 #container .product-box-all ul li{
     display: inline-block;
-    width:250px;
+    width: 250px;
     height: 350px;
     border: 1px solid brown;
     margin: 2px;

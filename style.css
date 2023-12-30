@@ -84,9 +84,9 @@ html{
 .header-top .menu{
   display: none;
 }
-.header-top .menu img{
+/* .header-top .menu img{
 
-}
+} */
 .header-main{
   height: auto;
 }
@@ -113,7 +113,7 @@ html{
 /* CSS cho phần banner giới thiệu trang web và sản phẩm */
 #slider-banner-item{
   width: 100%;
-  height: 300px;
+  height: 400px;
   background-color: aliceblue;
   margin: 10px 0;
   text-align: center;
