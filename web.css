@@ -62,21 +62,41 @@
     margin: 2px;
 }
 /* Tạo nút scroll top */
-.scroll-top{
-    width: 35px;
-    height: 45px;
-    border: 1px solid greenyellow;
-    background-color: greenyellow;
+.btn {
+    width: 30px;
+    height: 47px;
+    border-radius: 30px;
     display: flex;
-    bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    border: none;
+    outline: 2px solid yellowgreen;
+    box-shadow: 0px 0px 10px yellowgreen;
     position: fixed;
     right: 1.5rem;
-    border-radius: 1em;
+    bottom: 1rem;
+}   
+.scroll {
+width: 7px;
+height: 12px;
+border-radius: 10px;
+background-color: yellow;
+box-shadow: 0px 0px 10px white;
+animation: scroll_4013 0.5s linear infinite;
+transform: translateY(40%);
 }
-.scroll-top img{
-    width: 100%;
-    height: 100%;
+
+@keyframes scroll_4013 {
+0% {
+    transform: translateY(40%);
 }
+
+50% {
+    transform: translateY(90%);
+}
+};
+
 @media screen and (max-width : 980px) {
     .header-top ul li{
       display: none;
@@ -92,15 +112,16 @@
         font-size: 0.75rem;
     }
   }
-  @media screen and (max-width : 391px){
-    .scroll-top{
-        width: 30px;
-        height: 35px;
-        bottom: 0.5rem;
-        right: 1rem;
-    }
-    #container .field ul li{
-        min-width: 140px;
-        font-size: 0.7rem;
-    }
-  }
+@media screen and (max-width : 391px){
+.scroll-top{
+    width: 30px;
+    height: 35px;
+    bottom: 0.5rem;
+    right: 1rem;
+}
+#container .field ul li{
+    min-width: 140px;
+    font-size: 0.7rem;
+}
+}
+

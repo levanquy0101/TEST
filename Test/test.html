@@ -3,31 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Box</title>
   <style>
-    .image-container {
-      position: relative;
-      /* display: inline-block; */
-    }
+    body {
+  margin: 0;
+}
 
-    .image-text {
-      position: absolute;
-      bottom: 10px; /* Điều chỉnh vị trí theo ý muốn */
-      left: 10px; /* Điều chỉnh vị trí theo ý muốn */
-      color: white; /* Màu chữ */
-      font-size: 18px; /* Kích thước chữ */
-      font-weight: bold; /* Độ đậm chữ */
-      background: rgba(0, 0, 0, 0.5); /* Màu nền của chữ */
-      padding: 10px; /* Khoảng cách từ viền */
-    }
+.container {
+  display: flex;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  height: 100vh;
+  background-color: aqua;
+}
+
+.sticky-box {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 20%; /* Hiển thị phần tử fixed khi cuộn đạt 20% */
+  background-color: #f1f1f1;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
   </style>
-  <title>Text on Image</title>
 </head>
 <body>
+  <div class="container">
+    <div class="main-content">
+      Nội dung chính của trang web
+      
+      <!-- ... -->
+    </div>
 
-<div class="image-container">
-  <img src="img1.jpg" alt="Mô tả hình ảnh">
-  <p class="image-text">Chữ trên hình ảnh</p>
-</div>
-
+    <div class="sticky-box">
+      Nội dung của phần tử fixed
+      Sticky Box Content
+    </div>
+  </div>
 </body>
 </html>

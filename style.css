@@ -86,7 +86,6 @@ html{
 }
 .header-top .menu img{
 
-
 }
 .header-main{
   height: auto;
@@ -146,7 +145,13 @@ html{
     justify-content: space-between;
   }
 }
-@media screen and (max-width : 391px) {
+/* Responsive */
+@media screen and (max-width : 415px) {
+  .header-top ul li:first-child{
+    font-size: large;
+    /* display: flex; */
+    white-space: nowrap; /* Ngăn chữ xuống dòng */   
+  }
   .header-top ul{
     justify-content: space-between;
   }
