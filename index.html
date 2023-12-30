@@ -26,42 +26,27 @@
     <meta name="msapplication-TileImage" content="./frontend/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <!-- // -->
+    <script src="main.js"></script>
 </head>
 <body>
     <div id="main">
-        <header id="header">
-            <div class="header-banner-slider">
-                <h1 class="animated-text">levanquy.com - Web công nghệ - Cung cấp mã nguồn</h1>
-            </div>
-            <div class="header-top"> 
-                <ul>
-                    <li><a href="index.html"><img src="./frontend/favicon/android-icon-144x144.png" width="30px">levanquy.com</a></li>
-                    <li><a href="">Tin tức - Thủ thuật</a></li>
-                    <li><input type="text" placeholder="Bạn tìm gì..."></li>
-                    <li><a href="">Hỏi đáp</a></li>
-                    <li>Thông báo<ion-icon name="notifications-circle-outline"></ion-icon></li>
-                    <li><a href="./login.html">User <ion-icon name="person-circle-outline"></ion-icon></a></li>
-                    <li class="menu"><img src="./frontend/img/list.png" alt="" width="35px"></li>
-                </ul>
-            </div>
-            <div class="header-main">
-                <ul>
-                    <li><a href="web.html"><img src="./frontend/img/world-wide-web.png" alt="">Website</a></li>
-                    <li><a href=""><img src="./frontend/img/cell-phone.png" alt="">Mobile&nbsp;App</a></li>
-                    <li><a href=""><img src="./frontend/img/motherboard.png" alt="">Adruino</a></li>
-                    <li><a href=""><img src="./frontend/img/game-console.png" alt="">Đồ&nbsp;chơi công&nbsp;nghệ</a></li>
-                    <li><a href=""><img src="./frontend/img/tools.png" alt="">Tool hỗ trợ</a></li>
-                    <li><a href=""><img src="./frontend/img/customer-service.png" alt="">Dịch&nbsp;vụ khác</a></li> 
-                </ul>
-            </div>
-        </header>
+        <!-- Make Header -->
+        <header id="header"></header>
+        <script>
+            load("#header", "header.html");
+        </script>
+        <!-- Make Slider -->
         <div id="slider-banner-item">
             <img src="./frontend/img/pngtree-banner-website-promotion-technology-in-blue-image_424319.jpg" alt="">
         </div>
+        <!-- Make Main -->
         <main id="container">
         </main>  
+        <!-- Make Footer -->
         <footer id="footer">
-            <p style="text-align: center;" >&copy; Trang web công nghệ được phát triển bởi LE&nbsp;VAN&nbsp;QUY</p>
+            <script>
+                load("#footer", "footer.html");
+            </script>
         </footer>
     </div>
 </body>
