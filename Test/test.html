@@ -1,71 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>React App</title>
+  <!-- Include React and ReactDOM -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <!-- Include Babel standalone to convert JSX into JavaScript -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <section class="products">
-    <h2>Danh sách sản phẩm</h2>
-    
-    <div class="product-list">
-  
-      <article class="product">
-        <img src="img/product1.jpg" alt="Product 1">
-        <h3>Tên sản phẩm 1</h3>
-        <p>Giá: 100.000 VND</p>
-        <button>Mua ngay</button>
-      </article>
-  
-      <article class="product">
-        <img src="img/product2.jpg" alt="Product 2"> 
-        <h3>Tên sản phẩm 2</h3>
-        <p>Giá: 200.000 VND</p>
-        <button>Mua ngay</button>
-      </article>
-      <article class="product">
-        <img src="img/product1.jpg" alt="Product 1">
-        <h3>Tên sản phẩm 1</h3>
-        <p>Giá: 100.000 VND</p>
-        <button>Mua ngay</button>
-      </article>
-  
-      <article class="product">
-        <img src="img/product2.jpg" alt="Product 2"> 
-        <h3>Tên sản phẩm 2</h3>
-        <p>Giá: 200.000 VND</p>
-        <button>Mua ngay</button>
-      </article>
-      <article class="product">
-        <img src="img/product1.jpg" alt="Product 1">
-        <h3>Tên sản phẩm 1</h3>
-        <p>Giá: 100.000 VND</p>
-        <button>Mua ngay</button>
-      </article>
-  
-      <article class="product">
-        <img src="img/product2.jpg" alt="Product 2"> 
-        <h3>Tên sản phẩm 2</h3>
-        <p>Giá: 200.000 VND</p>
-        <button>Mua ngay</button>
-      </article>
-      <article class="product">
-        <img src="img/product1.jpg" alt="Product 1">
-        <h3>Tên sản phẩm 1</h3>
-        <p>Giá: 100.000 VND</p>
-        <button>Mua ngay</button>
-      </article>
-  
-      <article class="product">
-        <img src="img/product2.jpg" alt="Product 2"> 
-        <h3>Tên sản phẩm 2</h3>
-        <p>Giá: 200.000 VND</p>
-        <button>Mua ngay</button>
-      </article>
-  
-    </div>
-  </section>
+  <div id="root"></div>
+
+  <!-- JSX Component -->
+  <script type="text/babel" src="main.jsx"></script>
 </body>
+
 </html>

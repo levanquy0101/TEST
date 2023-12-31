@@ -121,7 +121,7 @@ html{
 }
 /* CSS cho Footer của trang web */
 #footer{
-  background-color: #f1f1f1;
+  background-color: #C6E2FF;
   width: 100%;
   height: auto;
 }
@@ -130,7 +130,7 @@ html{
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 5vw;
-  padding: 5vh 0;
+  padding-top: 4vh;
 }
 .footer-content{
   width: 300px;
@@ -157,7 +157,8 @@ html{
 }
 .footer-bottom{
   text-align: center;
-  padding: 20px 0;
+  padding: 10px 0;
+  background-color: rgb(255, 255, 0,0.1);
 }
 
 @media screen and (max-width : 980px) {
