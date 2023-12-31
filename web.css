@@ -135,9 +135,9 @@ transform: translateY(40%);
         font-size: 0.75rem;
     }
   }
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .product { 
-        width: 46%;  
+        width: 48%;  
     }
 }
 @media screen and (max-width : 576px){
@@ -158,9 +158,10 @@ transform: translateY(40%);
         min-width: 140px;
         font-size: 0.7rem;
     }
+}
+@media screen and (max-width : 320px){
     .product {
-        width: 96%;
+        width: 98%;
     }
 }
-
 
