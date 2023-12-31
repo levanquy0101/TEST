@@ -136,7 +136,8 @@ html{
   width: 300px;
 }
 .footer-content ul{
-  margin-top: 10px;
+  margin-top: 6px;
+  margin-bottom: 12px;
 }
 .footer-content a{
   color: black;
