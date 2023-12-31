@@ -69,14 +69,13 @@
     display: flex;
     flex-wrap: wrap;
 }
-  
 .product {
-    width: 23%; 
-    margin: 1%;
-    /* padding: 0px; */
+    width: 24%; /* 4 sp trên 1 hàng */
+    margin: 0.5%; 
+    padding: 10px;
     box-sizing: border-box;
     border: 1px solid #dcdcdc;
-}
+  }
 .product img{
     width: 100%;
 }
@@ -120,27 +119,27 @@ transform: translateY(40%);
 }
 };
 
-@media screen and (max-width : 992px) {
+/* @media screen{
+  } */
+/* ----------------Responsive------------------ */
+@media screen and (max-width: 992px)  {
     .header-top ul li{
-      display: none;
+        display: none;
     }
     .header-top ul{
-      justify-content: space-between;
+        justify-content: space-between;
     }
-    /* #container{
-      margin: 0 1vw;
-    } */
     #container .field ul li{
         min-width: 170px;
         font-size: 0.75rem;
     }
-  }
-@media screen and (max-width: 768px) {
-    .product { 
-        width: 48%;  
-    }
 }
-@media screen and (max-width : 576px){
+@media screen and (max-width: 768px) {
+    .product {
+        width: 32%;
+    }  
+}
+@media screen and (max-width : 534px){
     #container{
     margin: 0 1vw;
     }
@@ -158,10 +157,12 @@ transform: translateY(40%);
         min-width: 140px;
         font-size: 0.7rem;
     }
+    .product{
+        width: 49%;
+    }
 }
 @media screen and (max-width : 320px){
     .product {
-        width: 98%;
+        width: 100%;
     }
 }
-

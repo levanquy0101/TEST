@@ -161,6 +161,7 @@ html{
   background-color: rgb(255, 255, 0,0.1);
 }
 
+/* Responsive */
 @media screen and (max-width : 992px) {
   .header-top ul li{
     display: none;
@@ -168,9 +169,6 @@ html{
   .header-top ul li:first-child{
     display: inline-block;
   }
-  /* .header-top ul li:nth-child(6){
-    display: inline-block;
-  } */
   .header-top ul li:last-child{
     display: flex;
     align-items: center;
@@ -179,11 +177,9 @@ html{
     justify-content: space-between;
   }
 }
-/* Responsive */
 @media screen and (max-width : 576px) {
   .header-top ul li:first-child{
     font-size: large;
-    /* display: flex; */
     white-space: nowrap; /* Ngăn chữ xuống dòng */   
   }
   .header-top ul{
