@@ -161,7 +161,7 @@ html{
   background-color: rgb(255, 255, 0,0.1);
 }
 
-@media screen and (max-width : 980px) {
+@media screen and (max-width : 992px) {
   .header-top ul li{
     display: none;
   }
@@ -180,7 +180,7 @@ html{
   }
 }
 /* Responsive */
-@media screen and (max-width : 415px) {
+@media screen and (max-width : 576px) {
   .header-top ul li:first-child{
     font-size: large;
     /* display: flex; */

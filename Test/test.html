@@ -1,22 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>React App</title>
-  <!-- Include React and ReactDOM -->
-  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-  <!-- Include Babel standalone to convert JSX into JavaScript -->
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.product-list {
+  display: flex;
+  flex-wrap: wrap;  
+}
+
+.product {
+  width: 23%; 
+  margin: 1%;
+  /* padding: 0px; */
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .product { 
+    width: 46%;  
+  }
+}
+img{
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+  .product {
+    width: 96%;
+  }
+}
+    </style>
 </head>
-
 <body>
-  <div id="root"></div>
-
-  <!-- JSX Component -->
-  <script type="text/babel" src="main.jsx"></script>
+    <div class="product-list">
+        <div class="product">
+          <img src="item8.jpg">
+          <h3>Sản phẩm 1</h3>
+          <p>Mô tả sản phẩm 1</p>
+          <button>Mua</button>
+        </div>
+      
+        <div class="product">
+          <img src="item10.jpg">
+          <h3>Sản phẩm 2</h3>
+          <p>Mô tả sản phẩm 2</p>
+          <button>Mua</button>
+        </div>
+        <div class="product">
+          <img src="item8.jpg">
+          <h3>Sản phẩm 1</h3>
+          <p>Mô tả sản phẩm 1</p>
+          <button>Mua</button>
+        </div>
+    </div>
 </body>
-
 </html>
