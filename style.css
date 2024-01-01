@@ -12,7 +12,8 @@ html{
 /* CSS cho phần đầu trang gồm banner header, header top, header main */
 #header{
   margin-bottom: 10px;
-  background: linear-gradient(to right, #ffd400,yellow);
+  /* background: linear-gradient(to right, #ffd400,yellow); */
+  background: linear-gradient(269.88deg, #ffa500 6.75%, #ff8c00 95.85%);
 }
 .header-banner-slider{
   width: 100%;
@@ -66,10 +67,11 @@ html{
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .header-top ul li:nth-child(5){
-  color: white;
+  color: whitesmoke;
 }
 .header-top ul li a{
-  color: white;
+  /* color: white; */
+  color: whitesmoke;
 }
 .header-top input {
   padding: 7px;
