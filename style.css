@@ -108,6 +108,23 @@ html{
 .header-main ul li img{
   width: 20px;
 }
+.dropdown-down{
+  display: inline-block;
+}
+.dropdown-content{
+  display: none;
+  background-color: #C6E2FF;
+  position: absolute;
+  flex-direction: column;
+  padding: 5px 25px;
+}
+.dropdown-content a{
+  display: inline-block;
+}
+.dropdown-down:hover .dropdown-content{
+  display: flex;
+  background-color: #dcdcdc;
+}
 /* CSS cho phần banner giới thiệu trang web và sản phẩm */
 #slider-banner-item{
   width: 100%;
