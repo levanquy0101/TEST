@@ -127,9 +127,15 @@ transform: translateY(40%);
 }
 };
 
-/* @media screen{
-  } */
-/* ----------------Responsive------------------ */
+/* -----------------------------------------Responsive-------------------------------------- */
+@media screen {
+    
+}
+@media screen and (min-width: 1200px){
+    .product{
+        width: 15.65%;
+    }
+}
 @media screen and (max-width: 992px)  {
     .header-top ul li{
         display: none;
