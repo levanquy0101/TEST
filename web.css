@@ -131,7 +131,7 @@ transform: translateY(40%);
 @media screen {
     
 }
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1600px){
     .product{
         width: 15.65%;
     }
