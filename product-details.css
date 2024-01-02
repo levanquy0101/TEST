@@ -1,0 +1,33 @@
+#main{
+    margin: 0 5vw;
+}
+#main .nav-link{
+
+}
+.nav-link ul li{
+    display: inline-block;
+}
+.nav-link ul li a{
+
+}
+.box-main {
+}
+.product {
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+}
+.img-product {
+    width: 50%;
+    padding: 20px;
+}
+.img-product img{
+    width: 100%;
+}
+.infor-product {
+    padding: 20px;
+}
+.evaluate-product{
+    padding: 20px;
+    display: block;
+}
