@@ -96,12 +96,22 @@
 .product:hover .name-product{
     color: blue;
 }
-.product img{
+.product a img{
     width: 100%;
     padding: 4px 0;
 }
-.product img:hover{
+.product a img:hover{
     padding: 0px;
+}
+i.ri-add-line{
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    cursor: cell;
+}
+.ri-add-line img{
+    width: 20px;
+    height: auto;
 }
 /* Tạo nút scroll top */
 .btn-top {
