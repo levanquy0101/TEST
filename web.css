@@ -103,14 +103,13 @@
 .product a img:hover{
     padding: 0px;
 }
-i.ri-add-line{
-    display: flex;
-    align-items: center;
-    margin-top: 4px;
+i.ri-love-line{
+    float: right;
+    /* margin-top: 4px; */
     cursor: cell;
 }
-.ri-add-line img{
-    width: 20px;
+.ri-love-line img{
+    width: 24px;
     height: auto;
 }
 /* Tạo nút scroll top */
