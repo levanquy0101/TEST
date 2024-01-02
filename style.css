@@ -10,7 +10,7 @@ html{
   scroll-behavior: smooth;
 }
 #main{
-  background-color: #ffd874;
+  /* background-color: #ffd874; */
 }
 /* CSS cho phần đầu trang gồm banner header, header top, header main */
 #header{
