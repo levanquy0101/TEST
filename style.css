@@ -21,12 +21,14 @@ html{
   background: url("./frontend/img/banner-top.gif") center/cover no-repeat;
   text-align: center;
   overflow-x: hidden;
+  display: flex;
+  align-items: center;
 }
 .animated-text {
   white-space: nowrap; /* Ngăn chữ xuống dòng */
   animation: slideIn 10s linear infinite; /* Lặp lại vô hạn */
   font-weight: bold;
-  line-height: 40px;
+  /* line-height: 40px; */
   font-size: large;
   color: white;
   text-transform: uppercase;
@@ -180,7 +182,7 @@ html{
   background-color: rgb(255, 255, 0,0.1);
 }
 
-/* Responsive */
+/* ------------------------Responsive---------------------- */
 @media screen and (max-width : 992px) {
   .header-top ul li{
     display: none;
@@ -210,6 +212,9 @@ html{
   }
   .animated-text{
     font-size: small;
+  }
+  .header-banner-slider{
+    height: 30px;
   }
 }
 
