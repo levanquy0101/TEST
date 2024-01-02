@@ -8,7 +8,7 @@
     display: inline-block;
 }
 .nav-link ul li a{
-
+    color: rgb(0, 85, 255);
 }
 .box-main {
 }
@@ -19,15 +19,64 @@
 }
 .img-product {
     width: 50%;
-    padding: 20px;
+    padding: 4px;
 }
 .img-product img{
     width: 100%;
 }
 .infor-product {
-    padding: 20px;
+    width: 50%;
+    padding: 4px;
 }
 .evaluate-product{
-    padding: 20px;
-    display: block;
+    width: 100%;
+    padding: 4px;
+}
+.other-products{
+    padding: 4px;
+}
+
+/* ------------------------------------------Responsive -------------------------------------------*/
+/* @media screen {  */
+  /* Được dùng khi không ăn responsive */
+/* } */
+
+/* Màn hình Desktop cực lớn */
+@media screen and (min-width: 1920px){
+
+}
+/* Màn hình Desktop lớn */
+@media screen and (max-width: 1492px){
+
+}
+/* Màn hình Desktop */
+@media screen and (max-width: 1200px){
+
+}
+/* Màn hình Tablet lớn */
+@media screen and (max-width: 992px){
+
+}
+/* Màn hình Tablet */
+@media screen and (max-width: 768px) {
+    .product{
+        display: block;
+    }
+    .img-product {
+        width: 100%;
+        padding: 4px;
+    }
+    .infor-product{
+        width: 100%;
+    }
+}
+/* Màn hình Mobile */
+@media screen and (max-width : 534px){
+    #main{
+        margin: 0 1vw;
+        }
+}
+/* Màn hình Mobile cực nhỏ */
+@media screen and (max-width : 320px){
+
 }
