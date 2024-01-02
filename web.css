@@ -5,10 +5,11 @@
     display: flex;
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: #ffd874;
     overflow-x: auto;
     padding: 4px 0;
-    border-bottom: 2px solid yellowgreen;
+    /* border-bottom: 2px solid yellowgreen; */
+    box-shadow: 0px 3px yellowgreen;
 }
 #container .filter-total .all{
     padding: 4px 10px;
@@ -16,6 +17,7 @@
     border: 1px solid #808080;
     border-radius: 5px;
     display: flex;
+    background-color: whitesmoke;
     white-space: nowrap; /* Ngăn chữ xuống dòng */   
 }
 #container .field{
