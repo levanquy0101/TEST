@@ -21,14 +21,12 @@ html{
   background: url("./frontend/img/banner-top.gif") center/cover no-repeat;
   text-align: center;
   overflow-x: hidden;
-  display: flex;
-  align-items: center;
+  line-height: 40px;
 }
 .animated-text {
   white-space: nowrap; /* Ngăn chữ xuống dòng */
   animation: slideIn 10s linear infinite; /* Lặp lại vô hạn */
   font-weight: bold;
-  /* line-height: 40px; */
   font-size: large;
   color: white;
   text-transform: uppercase;
@@ -215,6 +213,7 @@ html{
   }
   .header-banner-slider{
     height: 30px;
+    line-height: 30px;
   }
 }
 
