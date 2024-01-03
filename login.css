@@ -12,6 +12,7 @@
   margin: 20px;
   background: white;
   border-radius: 10px;
+  box-shadow: 2px 0px 2px 2px #9ca3af;
 }
 
 .login-box p:first-child {
