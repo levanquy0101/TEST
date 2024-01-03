@@ -136,7 +136,7 @@ html{
 /* -----------------CSS Dropdown------------------*/
 .dropdown-down{
   display: inline-block;
-  position: relative;
+  /* position: relative; */
 }
 .dropdown-content{
   display: none;
