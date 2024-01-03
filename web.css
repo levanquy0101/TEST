@@ -171,19 +171,10 @@ transform: translateY(40%);
     }
 }
 @media screen and (max-width: 992px)  {
-    .header-top ul li{
-        display: none;
-    }
-    .header-top ul{
-        justify-content: space-between;
-    }
     #container .field ul li{
         min-width: 170px;
         font-size: 0.75rem;
     }
-    /* .product{
-        width: 24%;
-    } */
 }
 @media screen and (max-width: 768px) {
     /* Hiển thị 3 sản phẩm trên 1 hàng */

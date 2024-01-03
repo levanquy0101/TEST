@@ -16,7 +16,6 @@ html{
 /* CSS cho phần đầu trang gồm banner header, header top, header main */
 #header{
   margin-bottom: 10px;
-  /* background: linear-gradient(to right, #ffd400,yellow); */
   background: linear-gradient(269.88deg, #ffa500 6.75%, #ff8c00 95.85%);
 }
 .header-banner-slider{
@@ -188,7 +187,7 @@ html{
   .header-top .nav-link-header{
     justify-content: space-between;
   }
-  .header-top .nav-1 li:nth-child(n+2) {
+  .header-top .nav-link-header .nav-1 li:nth-child(n+2) {
     display: none;
 }
   .header-top .nav-link-header .nav-2{
