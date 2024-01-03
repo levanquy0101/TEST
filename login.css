@@ -86,6 +86,10 @@
   position: absolute;
   display: block;
 }
+.forget-pass{
+  float: right;
+  color: blue;
+}
 
 .login-box a span:nth-child(1) {
   top: 0;
@@ -172,7 +176,7 @@
 }
 
 .login-box a.a2 {
-  color: blue;
+  color: green;
   text-decoration: none;
 }
 

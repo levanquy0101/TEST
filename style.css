@@ -9,6 +9,10 @@
 html{
   scroll-behavior: smooth;
 }
+.icon-size{
+  width: 30px;
+  height: 30px;
+}
 /* CSS cho phần đầu trang gồm banner header, header top, header main */
 #header{
   margin-bottom: 10px;
@@ -46,31 +50,35 @@ html{
 .header-top{
   width: 100%;
   background-color: black;
-  /* position: sticky; */
-  /* top: 0; */
   height: 50px;
+}
+.header-top .nav-link-header{
+  display: flex;
+  justify-content: center;
+}
+.header-top .nav-link-header .nav-2{
+  display: none;
 }
 .header-top ul{
   display: flex;
   justify-content: center;
 }
 .header-top ul li{
-  display: inline-block;
-  line-height: 50px;
-  margin: 0 1em;
+  margin: 0 2vw;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.header-top ul li a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .header-top ul li:nth-child(1){
   font-size: x-large;
   font-weight: bold;
 }
-.header-top ul li:nth-child(1) a{
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.header-top ul li:nth-child(5){
-  color: whitesmoke;
-}
 .header-top ul li a{
-  /* color: white; */
   color: whitesmoke;
 }
 .header-top input {
@@ -79,12 +87,6 @@ html{
   border-radius: 4px;
   height: 40px;
 }
-.header-top .menu{
-  display: none;
-}
-/* .header-top .menu img{
-
-} */
 .header-main{
   height: auto;
 }
@@ -92,8 +94,6 @@ html{
   display: flex;
   justify-content: space-around;
 }
-/* .header-main ul li{
-} */
 .header-main ul li:hover{
   background-color: whitesmoke;
   border-radius: 4px;
@@ -117,7 +117,6 @@ html{
   background-color: #C6E2FF;
   position: absolute;
   flex-direction: column;
-  /* padding: 5px 25px; */
 }
 .dropdown-content a{
   display: inline-block;
@@ -140,9 +139,10 @@ html{
 }
 /* CSS cho Footer của trang web */
 #footer{
-  background-color: #C6E2FF;
+  background-color: #e2e8f0;
   width: 100%;
   height: auto;
+  margin-top: 10px;
 }
 #footer .footer-container{
   display: flex;
@@ -153,6 +153,9 @@ html{
 }
 .footer-content{
   width: 300px;
+}
+.footer-content h3{
+  color: #f97316;
 }
 .footer-content ul{
   margin-top: 6px;
@@ -177,25 +180,22 @@ html{
 .footer-bottom{
   text-align: center;
   padding: 10px 0;
-  background-color: rgb(255, 255, 0,0.1);
+  background-color: #dcdcdc;
 }
 
 /* ------------------------Responsive---------------------- */
 @media screen and (max-width : 992px) {
-  .header-top ul li{
-    display: none;
-  }
-  .header-top ul li:first-child{
-    display: inline-block;
-  }
-  .header-top ul li:last-child{
-    display: flex;
-    align-items: center;
-  }
-  .header-top ul{
+  .header-top .nav-link-header{
     justify-content: space-between;
   }
+  .header-top .nav-1 li:nth-child(n+2) {
+    display: none;
 }
+  .header-top .nav-link-header .nav-2{
+    display: flex;
+  }
+}
+
 @media screen and (max-width : 576px) {
   .header-top ul li:first-child{
     font-size: large;
