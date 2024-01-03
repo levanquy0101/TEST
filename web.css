@@ -78,6 +78,7 @@
     /* border: 1px solid #dcdcdc; */
     padding: 6px;
     background-color: white;
+    border-radius: 6px;
 }
 .product .name-product{
     color: #111;
