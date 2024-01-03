@@ -16,7 +16,7 @@ html{
 /* CSS cho phần đầu trang gồm banner header, header top, header main */
 #header{
   margin-bottom: 10px;
-  background: linear-gradient(269.88deg, #ffa500 6.75%, #ff8c00 95.85%);
+  background: linear-gradient(269.88deg, #fbbf24 6.75%, #f59e0b 95.85%);
 }
 .header-banner-slider{
   width: 100%;
@@ -48,8 +48,8 @@ html{
 }
 .header-top{
   width: 100%;
-  background-color: black;
-  height: 50px;
+  background-color: #0f172a;
+  height: 60px;
 }
 .header-top .nav-link-header{
   display: flex;
@@ -66,7 +66,7 @@ html{
   margin: 0 2vw;
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 60px;
 }
 .header-top ul li a{
   display: flex;
@@ -119,10 +119,10 @@ html{
   display: flex;
   justify-content: space-around;
 }
-.header-main ul li:hover{
+/* .header-main ul li:hover{
   background-color: whitesmoke;
   border-radius: 4px;
-}
+} */
 .header-main ul li a{
   padding: 8px 12px;
   color: black;

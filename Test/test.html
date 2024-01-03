@@ -1,70 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- Link CSS -->
-  <link rel="stylesheet" href="styles.css">
-  <!-- Favicon -->
-  <link rel="apple-touch-icon" sizes="57x57" href="./frontend/favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="./frontend/favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="./frontend/favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="./frontend/favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="./frontend/favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="./frontend/favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="./frontend/favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="./frontend/favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./frontend/favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192"  href="./frontend/favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="./frontend/favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <!-- Script -->
-  <script>
-    function w3_open() {
-      document.getElementById("mySidebar").style.display = "block";
-    }
-    
-    function w3_close() {
-      document.getElementById("mySidebar").style.display = "none";
-    }
-    </script>
-</head>
-<body>
-  <div id="app">
-    <!-- Make Header -->
-    <header id="header">
-      <div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="width:200px;" id="mySidebar">
-        <button class="w3-bar-item w3-button w3-hide-large"
-        onclick="w3_close()">Close &times;</button>
-        <a href="#" class="w3-bar-item w3-button">Link 1</a>
-        <a href="#" class="w3-bar-item w3-button">Link 2</a>
-        <a href="#" class="w3-bar-item w3-button">Link 3</a>
-      </div>
-      
-      <div class="w3-main" style="margin-left:200px">
-      
-      <div class="w3-teal">
-        <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
-        <div class="w3-container">
-          <h1>My Page</h1>
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header>
+      <!-- place navbar here -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="width: 50vw;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img3.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </header>
-    <!-- Make Main -->
-    <main id="main">
-
-    </main>
-    <!-- Make footer -->
-    <footer id="footer">
-
+    <main></main>
+    <footer>
+      <!-- place footer here -->
     </footer>
-  </div>
-</body>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
