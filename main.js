@@ -28,3 +28,13 @@ function load(selector, path) {
             window.dispatchEvent(new Event("template-loaded"));
         });
 }
+function menu_open() {
+    document.getElementById("menu-sidebar").style.display = "block";
+    document.getElementById("container").style.display = "none";
+  }
+  
+function menu_close() {
+    document.getElementById("menu-sidebar").style.display = "none";
+    document.getElementById("container").style.display = "block";
+
+  }

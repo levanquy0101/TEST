@@ -8,15 +8,42 @@
         <ul class="nav-1">
             <li><a href="index.html"><img src="./frontend/favicon/android-icon-144x144.png" width="30px">levanquy.com</a></li>
             <li><a href="">Tin tức - Thủ thuật</a></li>
-            <li><input type="text" placeholder="Bạn tìm gì..."></li>
+            <li><input type="search" placeholder="Bạn tìm gì..."></li>
             <li><a href="">Hỏi đáp</a></li>
             <li><a href="./login.html"><img src="./frontend/img/profile.png" alt="" class="icon-size">&nbsp;Đăng nhập</a></li>
         </ul>
         <ul class="nav-2">
             <li><img src="./frontend/img/search.png" alt="" class="icon-size-min" width="24px" height="24px"></li>
-            <li class="menu"><img src="./frontend/img/list.png" alt="" class="icon-size"></li>
+            <li class="menu" onclick="menu_open()"><img src="./frontend/img/list.png" alt="" class="icon-size"></li>
         </ul>
     </nav>
+</div>
+<div class="sidebar" id="menu-sidebar" style="display: none;">
+    <button onclick="menu_close()">Đóng</button>
+    <div class="account">
+        <a href="./login.html"><img src="./frontend/img/profile.png" alt="" class="icon-size">&nbsp;Lê Văn Quý</a>
+        <a href="">Sản phẩm yêu thích</a>
+        <a href="">Cài đặt</a>
+    </div>
+    <div class="menu-conttent-sidebar">
+        <ul>
+            <li><a href="web.html">Website</a></li>
+            <li><a href="">Mobile&nbsp;App</a></li>
+            <li><a href="">Adruino</a></li>
+            <li><a href="">Đồ&nbsp;chơi công&nbsp;nghệ</a></li>
+            <li><a href="">Tool hỗ trợ</a></li>
+            <li class="dropdown-down"><a href="">Dịch&nbsp;vụ khác&#9662;</a>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                  </div>
+            </li> 
+        </ul> 
+    </div>
+    <div class="other-infor">
+        
+    </div>
 </div>
 <div class="header-main">
     <ul>

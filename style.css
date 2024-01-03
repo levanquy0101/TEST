@@ -86,6 +86,32 @@ html{
   border-radius: 4px;
   height: 40px;
 }
+/* ----------------------CSS cho phần menu sidebar ------------------*/
+.sidebar{
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+}
+.sidebar button{
+  width: 50px;
+  padding: 4px;
+  margin: 4px;
+}
+.sidebar .account{
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+.sidebar .account a{
+  margin: 4px 0;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-size: large;
+}
+
+
 .header-main{
   height: auto;
 }
@@ -107,6 +133,7 @@ html{
 .header-main ul li img{
   width: 20px;
 }
+/* -----------------CSS Dropdown------------------*/
 .dropdown-down{
   display: inline-block;
   position: relative;
