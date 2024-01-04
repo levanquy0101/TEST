@@ -12,7 +12,7 @@
     box-shadow: 0px 3px yellowgreen;
 }
 #container .filter-total .all{
-    padding: 4px 10px;
+    padding: 4px;
     margin: 6px 4px;
     border: 1px solid #808080;
     border-radius: 5px;
@@ -27,8 +27,7 @@
     color: black;
     background-color: whitesmoke;
     outline: none;
-    font-size: 0.95em;
-    /* width: auto; */
+    font-size: 1em;
 }
 #container .field{
     margin-bottom: 6px;
@@ -38,9 +37,10 @@
     margin-left: 2px;
 }
 #container .filter-total .all img{
-    width: 10px;
-    height: 10px;
+    width: 11px;
+    height: 11px;
     margin: auto;
+    margin-bottom: 5px;
     margin-left: 5px;
 }
 #container .field ul li{

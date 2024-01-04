@@ -1,39 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-#select {
-  width: auto;
-  padding: 5px;
-  font-size: 16px;
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    select {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+
+    }
+  </style>
 </head>
 <body>
-
-<select id="select">
-  <option>Mới nhất</option> 
-  <option>Xem nhiều</option>
-  <option>Bình chọn cao</option>
-</select>
-
-<script>
-var select = document.getElementById("select");
-
-select.addEventListener("change", function() {
-  var option = select.options[select.selectedIndex];
-  
-  var span = document.createElement("span");
-  span.textContent = option.textContent;
-
-  document.body.appendChild(span);
-
-  var width = span.offsetWidth + "px";
-  select.style.width = width;
-
-  document.body.removeChild(span);  
-});
-</script>
-
+  <select>
+    <option>Mới nhất</option> 
+    <option>Xem nhiều</option>
+    <option>Bình chọn cao nhất</option>
+  </select>
 </body>
 </html>
