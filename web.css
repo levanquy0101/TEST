@@ -76,7 +76,6 @@
     width: 24%; /* 4 sp trên 1 hàng */
     margin: 0.5%; 
     box-sizing: border-box;
-    /* border: 1px solid #dcdcdc; */
     padding: 6px;
     background-color: white;
     border-radius: 6px;
@@ -101,13 +100,14 @@
 .product a img{
     width: 100%;
     padding: 4px 0;
+    /* transition: all 0.1s; */
+    border-radius: 6px;
 }
 .product a img:hover{
-    padding: 0px;
+    transform: translateY(-6px);
 }
 i.ri-love-line{
     float: right;
-    /* margin-top: 4px; */
     cursor: cell;
 }
 .ri-love-line img{
