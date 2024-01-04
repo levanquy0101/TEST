@@ -14,7 +14,7 @@
 #container .filter-total .all{
     padding: 4px;
     margin: 6px 4px;
-    border: 1px solid #808080;
+    border: 1px solid #cbd5e1;
     border-radius: 5px;
     display: flex;
     background-color: whitesmoke;
@@ -22,6 +22,7 @@
     align-items: center;
 }
 #container .filter-total .select-setall{
+    font-size: 1em;
     cursor: pointer; 
     border: none;
     color: black;
