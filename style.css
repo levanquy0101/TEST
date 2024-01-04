@@ -16,7 +16,7 @@ html{
 /* CSS cho phần đầu trang gồm banner header, header top, header main */
 #header{
   margin-bottom: 10px;
-  background: linear-gradient(269.88deg, #fbbf24 6.75%, #f59e0b 95.85%);
+  background: linear-gradient(269.88deg, #f59e0b 6.75%, #fb923c 95.85%);
 }
 .header-banner-slider{
   width: 100%;
