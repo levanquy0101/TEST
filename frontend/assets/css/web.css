@@ -23,8 +23,7 @@
     display: flex;
     background-color: whitesmoke;
     white-space: nowrap; /* Ngăn chữ xuống dòng */
-    /* align-items: center; */
-    font-size: 14px;
+    font-size: 1em;
     color: black;
 }
 
