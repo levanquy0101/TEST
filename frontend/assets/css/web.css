@@ -8,7 +8,7 @@
     background-color: white;
     overflow-x: auto;
     z-index: 100;
-    box-shadow: 0px 3px yellowgreen;
+    box-shadow: 0px 2px yellowgreen;
 }
 #container .filter-total .filter{
     /* position: sticky; */
