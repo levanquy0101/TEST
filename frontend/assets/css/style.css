@@ -43,7 +43,7 @@ html{
   width: 255px;
 }
 
-.nav-link-header .group .input {
+.nav-link-header .group .input-desktop {
   height: 40px;
   line-height: 28px;
   padding: 0 1rem;
@@ -56,11 +56,11 @@ html{
   border: 2px solid;
   border-image: conic-gradient( #00F260, #0575E6,#64f38c) 1;
 }
-.input::placeholder {
+.input-desktop::placeholder {
   color: #fff;
 }
 
-.input:focus::placeholder {
+.input-desktop:focus::placeholder {
   color: #999;
 }
 .icon-search {
@@ -71,66 +71,54 @@ html{
   height: 1rem;
 }
 /* CSS cho thanh tìm kiếm màn hình nhỏ */
-.input-container {
+.nav-2 .container {
   position: relative;
-  display: flex;
-  align-items: center;
-  z-index: 1;
+  --size-button: 40px;
+  color: white;
 }
 
-.input-container .input {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
+.nav-2 .input {
+  padding-left: var(--size-button);
+  height: var(--size-button);
+  font-size: 15px;
   border: none;
+  color: #fff;
   outline: none;
-  padding: 18px 16px;
-  background-color: transparent;
+  width: var(--size-button);
+  transition: all ease 0.3s;
+  background-color: #191A1E;
+  box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+  border-radius: 50px;
   cursor: pointer;
-  transition: all .5s ease-in-out;
 }
 
-.input-container .input::placeholder {
-  color: transparent;
+.nav-2 .input:focus,
+.input:not(:invalid) {
+  width: 200px;
+  cursor: text;
+  box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
 }
 
-.input-container .input:focus::placeholder {
-  color: rgb(131, 128, 128);
+.nav-2 .input:focus + .icon-mobile-sm,
+.nav-2 .input:not(:invalid) + .icon-mobile-sm {
+  pointer-events: all;
+  cursor: pointer;
 }
 
-.input-container .input:focus,.input-container .input:not(:placeholder-shown) {
-  background-color: #fff;
-  border: 1px solid rgb(98, 0, 255);
-  width: min(290px,100%);
-  cursor: none;
-  padding: 18px 16px 18px 40px;
-}
-
-.icon {
+.container .icon-mobile-sm {
   position: absolute;
-  left: 0;
+  width: var(--size-button);
+  height: var(--size-button);
   top: 0;
-  height: 40px;
-  width: 40px;
-  background-color: #fff;
-  border-radius: 10px;
-  z-index: -1;
-  fill: rgb(98, 0, 255);
-  border: 1px solid rgb(98, 0, 255);
+  left: 0;
+  padding: 8px;
+  pointer-events: none;
 }
 
-.input:hover + .icon {
-  transform: rotate(360deg);
-  transition: .2s ease-in-out;
+.container .icon-mobile-sm svg {
+  width: 100%;
+  height: 100%;
 }
-
-.input:focus + .icon,.input:not(:placeholder-shown) + .icon {
-  z-index: 0;
-  background-color: transparent;
-  border: none;
-}
-
-
 
 .header-top ul li{
   margin: 0 2vw;
@@ -277,8 +265,25 @@ html{
   background-color: #dcdcdc;
 }
 
-/* ------------------------Responsive---------------------- */
-@media screen and (max-width : 992px) {
+/* ------------------------------------------Responsive -------------------------------------------*/
+/* @media screen {  */
+  /* Được dùng khi không ăn responsive */
+/* } */
+
+/* Màn hình Desktop cực lớn */
+@media screen and (min-width: 1920px){
+
+}
+/* Màn hình Desktop lớn */
+@media screen and (max-width: 1492px){
+
+}
+/* Màn hình Desktop */
+@media screen and (max-width: 1200px){
+
+}
+/* Màn hình Tablet lớn */
+@media screen and (max-width: 992px){
   .header-top .nav-link-header{
     justify-content: space-between;
   }
@@ -289,15 +294,16 @@ html{
     display: flex;
   }
 }
+/* Màn hình Tablet */
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width : 534px) {
+}
+/* Màn hình Mobile */
+@media screen and (max-width : 534px){
   .header-top ul li:first-child{
     font-size: large;
     white-space: nowrap; /* Ngăn chữ xuống dòng */   
   }
-  .header-top .nav-link-header .nav-1 li:first-child a{
-    font-size: 0;
-}
   .header-top ul{
     justify-content: space-between;
   }
@@ -311,6 +317,12 @@ html{
   .header-banner-slider{
     height: 30px;
     line-height: 30px;
+  } 
+}
+/* Màn hình Mobile cực nhỏ */
+@media screen and (max-width : 320px){
+  .header-top .nav-link-header .nav-1 li:first-child a{
+    font-size: 0;
   }
 }
 
