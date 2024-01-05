@@ -13,38 +13,10 @@ html{
   width: 30px;
   height: 30px;
 }
-/* CSS cho phần đầu trang gồm banner header, header top, header main */
+/* -------------------------------CSS cho phần header ------------------*/
 #header{
   margin-bottom: 10px;
   background: linear-gradient(269.88deg, #f59e0b 6.75%, #fb923c 95.85%);
-}
-.header-banner-slider{
-  width: 100%;
-  height: 40px;
-  background: url("./frontend/img/banner-top.gif") center/cover no-repeat;
-  text-align: center;
-  overflow-x: hidden;
-  line-height: 40px;
-}
-.animated-text {
-  white-space: nowrap; /* Ngăn chữ xuống dòng */
-  animation: slideIn 10s linear infinite; /* Lặp lại vô hạn */
-  font-weight: bold;
-  font-size: large;
-  color: white;
-  text-transform: uppercase;
-}
-@keyframes slideIn {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(50%);
-  }
-}
-.header-banner-slider img{
-  width: 100%;
-  height: 100%;
 }
 .header-top{
   width: 100%;
@@ -62,6 +34,104 @@ html{
   display: flex;
   justify-content: center;
 }
+ /* CSS cho thanh tìm kiếm màn hình lớn*/
+.nav-link-header .group {
+  display: flex;
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  width: 255px;
+}
+
+.nav-link-header .group .input {
+  height: 40px;
+  line-height: 28px;
+  padding: 0 1rem;
+  width: 100%;
+  padding-left: 2.5rem;
+  outline: none;
+  background: linear-gradient(180deg,     rgb(56, 56, 56) 0%, rgb(36, 36, 36)   66%, rgb(41, 41, 41) 100%);
+  color: #fff;
+  transition: .3s ease;
+  border: 2px solid;
+  border-image: conic-gradient( #00F260, #0575E6,#64f38c) 1;
+}
+.input::placeholder {
+  color: #fff;
+}
+
+.input:focus::placeholder {
+  color: #999;
+}
+.icon-search {
+  position: absolute;
+  left: 1rem;
+  fill: #fff;
+  width: 1rem;
+  height: 1rem;
+}
+/* CSS cho thanh tìm kiếm màn hình nhỏ */
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+.input-container .input {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 18px 16px;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.input-container .input::placeholder {
+  color: transparent;
+}
+
+.input-container .input:focus::placeholder {
+  color: rgb(131, 128, 128);
+}
+
+.input-container .input:focus,.input-container .input:not(:placeholder-shown) {
+  background-color: #fff;
+  border: 1px solid rgb(98, 0, 255);
+  width: min(290px,100%);
+  cursor: none;
+  padding: 18px 16px 18px 40px;
+}
+
+.icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  width: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  z-index: -1;
+  fill: rgb(98, 0, 255);
+  border: 1px solid rgb(98, 0, 255);
+}
+
+.input:hover + .icon {
+  transform: rotate(360deg);
+  transition: .2s ease-in-out;
+}
+
+.input:focus + .icon,.input:not(:placeholder-shown) + .icon {
+  z-index: 0;
+  background-color: transparent;
+  border: none;
+}
+
+
+
 .header-top ul li{
   margin: 0 2vw;
   display: flex;
@@ -72,19 +142,17 @@ html{
   display: flex;
   align-items: center;
   justify-content: center;
+  color: whitesmoke;
 }
-.header-top ul li:nth-child(1){
+.header-top ul li:first-child{
   font-size: x-large;
   font-weight: bold;
 }
-.header-top ul li a{
-  color: whitesmoke;
-}
-.header-top input {
-  padding: 7px;
-  width: 275px;
-  border-radius: 4px;
-  height: 40px;
+.header-top ul li:last-child a{
+  padding: 4px 6px;
+  border: 1px solid #f59e0b;
+  border-radius: 999px;
+  /* border-image: conic-gradient( #00F260, #0575E6,#64f38c) 1; */
 }
 /* ----------------------CSS cho phần menu sidebar ------------------*/
 .sidebar{
@@ -222,11 +290,14 @@ html{
   }
 }
 
-@media screen and (max-width : 576px) {
+@media screen and (max-width : 534px) {
   .header-top ul li:first-child{
     font-size: large;
     white-space: nowrap; /* Ngăn chữ xuống dòng */   
   }
+  .header-top .nav-link-header .nav-1 li:first-child a{
+    font-size: 0;
+}
   .header-top ul{
     justify-content: space-between;
   }
