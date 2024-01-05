@@ -94,7 +94,7 @@ html{
 
 .nav-2 .input:focus,
 .input:not(:invalid) {
-  width: 200px;
+  width: min(200px,100%);
   cursor: text;
   box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
 }
@@ -175,10 +175,6 @@ html{
   display: flex;
   justify-content: space-around;
 }
-/* .header-main ul li:hover{
-  background-color: whitesmoke;
-  border-radius: 4px;
-} */
 .header-main ul li a{
   padding: 8px 12px;
   color: black;
@@ -324,6 +320,7 @@ html{
   .header-top .nav-link-header .nav-1 li:first-child a{
     font-size: 0;
   }
+
 }
 
 
