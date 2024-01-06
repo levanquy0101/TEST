@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thời gian hệ thống</title>
+</head>
+<body>
+    <h1>Thời gian hệ thống</h1>
+    <p id="time" style="color: green; font-size: 2rem;"></p>
+<script>
+    function DisplayTime(){
+        const time = new Date();
+        document.getElementById("time").innerText = time;
+        setInterval(DisplayTime, 1000)
+    }
+    DisplayTime()
+</script>
+</body>
+</html>
