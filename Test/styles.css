@@ -1,57 +1,6 @@
-/*-------------- Reset CSS----------- */
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
+.color-h1{
+  color: aqua;
 }
-#app{
-
-}
-/* -----------------------------CSS cho phần Header (phần đầu trang web) -----------------------------------*/
-#header{
-  
-}
-/* -----------------------------CSS cho phần Main (phần thân trang web) -----------------------------------*/
-#main{
-
-}
-/* -----------------------------CSS cho phần Footer (phần cuối trang web) ---------------------------------*/
-#footer{
-
-}
-
-/* ------------------------------------------Responsive -------------------------------------------*/
-/* @media screen {  */
-  /* Được dùng khi không ăn responsive */
-/* } */
-
-/* Màn hình Desktop cực lớn */
-@media screen and (min-width: 1920px){
-
-}
-/* Màn hình Desktop lớn */
-@media screen and (max-width: 1492px){
-
-}
-/* Màn hình Desktop */
-@media screen and (max-width: 1200px){
-
-}
-/* Màn hình Tablet lớn */
-@media screen and (max-width: 992px){
-
-}
-/* Màn hình Tablet */
-@media screen and (max-width: 768px) {
-
-}
-/* Màn hình Mobile */
-@media screen and (max-width : 534px){
-
-}
-/* Màn hình Mobile cực nhỏ */
-@media screen and (max-width : 320px){
-
+h1{
+  color: red;
 }
