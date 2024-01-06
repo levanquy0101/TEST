@@ -182,7 +182,7 @@ html{
   padding: 8px 12px;
   color: black;
   font-size: small;
-  font-weight: bold;
+  font-weight: 500;
   display: inline-block;
 }
 .header-main ul li img{
