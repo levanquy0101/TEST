@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=VT323&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -136,7 +137,7 @@ html{
   background-clip: text;
   -webkit-background-clip: text;
   font-family: 'Lobster', sans-serif;
-  
+  /* font-family: 'VT323', monospace; */
 }
 .header-top ul li:last-child a{
   padding: 4px 6px;
