@@ -181,9 +181,10 @@ html{
 .header-main ul li a{
   padding: 8px 12px;
   color: black;
-  font-size: small;
+  font-size: 0.875rem;
   font-weight: 500;
   display: inline-block;
+  text-align: center;
 }
 .header-main ul li img{
   width: 20px;
@@ -295,7 +296,11 @@ html{
 }
 /* Màn hình Tablet */
 @media screen and (max-width: 768px) {
-
+  .header-main ul li a{
+    font-size: 0.7rem;
+    padding: 4px 6px;
+    max-width: max(100px,100%);
+  }
 }
 /* Màn hình Mobile */
 @media screen and (max-width : 534px){
@@ -305,10 +310,6 @@ html{
   }
   .header-top ul{
     justify-content: space-between;
-  }
-  .header-main ul li a{
-    font-size: x-small;
-    padding: 4px 6px;
   }
   .animated-text{
     font-size: small;
@@ -322,6 +323,14 @@ html{
 @media screen and (max-width : 320px){
     .header-top .nav-link-header .nav-1 li:first-child a{
       font-size: 0;
+    }
+    .header-main ul li a{
+      font-size: 0.6rem;
+      padding: 4px;
+
+    }
+    .header-main ul li img{
+      display: none;
     }
 
 }
