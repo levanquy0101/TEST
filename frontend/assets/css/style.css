@@ -181,6 +181,11 @@ html{
   display: flex;
   justify-content: space-around;
 }
+.header-main ul li{
+  
+  display: flex;
+  align-items: center;
+}
 .header-main ul li a{
   padding: 8px 12px;
   color: black;
@@ -321,6 +326,9 @@ html{
     height: 30px;
     line-height: 30px;
   } 
+  .header-main ul li:last-child a{
+    display: none;
+  }
 }
 /* Màn hình Mobile cực nhỏ */
 @media screen and (max-width : 320px){
