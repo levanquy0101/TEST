@@ -173,6 +173,7 @@ html{
 
 .header-main{
   height: auto;
+  max-height: 100px;
   background-color: #00F260;
   background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);     
 
@@ -183,10 +184,9 @@ html{
 }
 .header-main ul li{
   
-  display: flex;
-  align-items: center;
 }
 .header-main ul li a{
+  display: flex;
   padding: 8px 12px;
   color: black;
   font-size: 0.875rem;
@@ -301,6 +301,9 @@ html{
   .header-top .nav-link-header .nav-2{
     display: flex;
   }
+  .header-main ul li img{
+    display: none;
+  }
 }
 /* Màn hình Tablet */
 @media screen and (max-width: 768px) {
@@ -329,6 +332,10 @@ html{
   .header-main ul li:last-child a{
     display: none;
   }
+  .header-main ul{
+      display: flex;
+      align-items: center;
+    }
 }
 /* Màn hình Mobile cực nhỏ */
 @media screen and (max-width : 320px){
@@ -336,8 +343,8 @@ html{
       font-size: 0;
     }
     .header-main ul li a{
-      font-size: 0.6rem;
-      padding: 4px;
+      font-size: 0.55rem;
+      padding: 2px 3px  ;
 
     }
     .header-main ul li img{
