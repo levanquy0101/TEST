@@ -125,15 +125,16 @@ i.ri-love-line{
     position: fixed;
     right: 1.5rem;
     bottom: 1rem;
+    z-index: 200;
 }   
 .scroll {
-width: 7px;
-height: 12px;
-border-radius: 10px;
-background-color: yellow;
-box-shadow: 0px 0px 10px white;
-animation: scroll_4013 0.5s linear infinite;
-transform: translateY(40%);
+    width: 7px;
+    height: 12px;
+    border-radius: 10px;
+    background-color: yellow;
+    box-shadow: 0px 0px 10px white;
+    animation: scroll_4013 0.5s linear infinite;
+    transform: translateY(40%);
 }
 /*----------------------------------------- CSS cho phần keyframes---------------------------- */
 @keyframes scroll_4013 {

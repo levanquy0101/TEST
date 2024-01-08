@@ -173,6 +173,9 @@ html{
 
 .header-main{
   height: auto;
+  background-color: #00F260;
+  background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);     
+
 }
 .header-main ul{
   display: flex;
