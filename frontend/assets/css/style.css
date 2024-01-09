@@ -230,7 +230,7 @@ html{
 }
 /* CSS cho Footer của trang web */
 #footer{
-  background-color: #e2e8f0;
+  background-color: #f1f5f9;
   width: 100%;
   height: auto;
   margin-top: 10px;
@@ -271,7 +271,7 @@ html{
 .footer-bottom{
   text-align: center;
   padding: 10px 0;
-  background-color: #dcdcdc;
+  background-color: #e5e7eb;
 }
 
 /* ------------------------------------------Responsive -------------------------------------------*/
