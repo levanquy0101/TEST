@@ -159,9 +159,9 @@ i.ri-love-line{
 }
 @media screen and (max-width: 1492px){
     /* Hiển thị 5 sản phẩm trên 1 hàng */
-    /* .product{
+    .product{
         width: 19%;
-    } */
+    }
 }
 @media screen and (max-width: 1200px){
     /* Hiển thị 4 sản phẩm trên 1 hàng */

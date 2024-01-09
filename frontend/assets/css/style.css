@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -59,8 +59,7 @@ html{
   background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);     
   background-clip: text;
   -webkit-background-clip: text;
-  font-family: 'Lobster', sans-serif;
-  /* font-family: 'VT323', monospace; */
+  font-family: 'Bungee Spice', sans-serif;
 }
 .header-top ul li:nth-last-child(2) a{
   padding: 4px 6px;
@@ -186,6 +185,9 @@ html{
   background-color: #C6E2FF;
   position: absolute;
   flex-direction: column;
+  right: 4px;
+  /* left: 90%; */
+  width: 120px;
 }
 .dropdown-content a{
   display: inline-block;
