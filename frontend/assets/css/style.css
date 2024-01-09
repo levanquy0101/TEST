@@ -267,7 +267,9 @@ html{
 }
 /* Màn hình Desktop */
 @media screen and (max-width: 1200px){
-
+  .header-main ul li{
+    margin: 0 1vw;
+  }
 }
 /* Màn hình Tablet lớn */
 @media screen and (max-width: 992px){
