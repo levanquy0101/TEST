@@ -43,6 +43,7 @@ html{
   line-height: 28px;
   align-items: center;
   position: relative;
+  width: 300px;
 }
 
 .nav-link-header .group .input-desktop {
@@ -153,6 +154,8 @@ html{
 .header-main ul{
   display: flex;
   justify-content: space-around;
+  white-space: nowrap;
+  overflow-x: auto;
 }
 
 .header-main ul li a{
@@ -309,6 +312,9 @@ html{
       display: flex;
       align-items: center;
     }
+  .nav-link-header .group{
+    width: min(300px,100%);
+  }
 }
 /* Màn hình Mobile cực nhỏ */
 @media screen and (max-width : 320px){
