@@ -304,9 +304,6 @@ html{
     height: 30px;
     line-height: 30px;
   } 
-  .header-main ul li:last-child a{
-    display: none;
-  }
   .header-main ul{
       display: flex;
       align-items: center;
