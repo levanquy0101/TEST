@@ -35,23 +35,24 @@ html{
   display: flex;
   justify-content: center;
 }
- /* CSS cho thanh tìm kiếm màn hình lớn*/
+ /* CSS cho thanh tìm kiếm*/
+ 
 .nav-link-header .group {
+  width: 100%;
   display: flex;
   line-height: 28px;
   align-items: center;
   position: relative;
-  width: 255px;
 }
 
 .nav-link-header .group .input-desktop {
   height: 40px;
   line-height: 28px;
-  padding: 0 1rem;
+  padding: 0 2rem;
   width: 100%;
   padding-left: 2.5rem;
   outline: none;
-  background: linear-gradient(180deg,     rgb(56, 56, 56) 0%, rgb(36, 36, 36)   66%, rgb(41, 41, 41) 100%);
+  background: linear-gradient(180deg,rgb(56, 56, 56) 0%, rgb(36, 36, 36)   66%, rgb(41, 41, 41) 100%);
   color: #fff;
   transition: .3s ease;
   border: 2px solid;
@@ -71,37 +72,7 @@ html{
   width: 1rem;
   height: 1rem;
 }
-/* CSS cho thanh tìm kiếm màn hình nhỏ */
-.nav-2 .container {
-  position: relative;
-  --size-button: 40px;
-  color: white;
-}
-.nav-2 .input {
-  padding-left: var(--size-button);
-  height: var(--size-button);
-  font-size: 15px;
-  border: none;
-  color: #fff;
-  outline: none;
-  width: var(--size-button);
-  transition: all ease 0.3s;
-  background-color: #191A1E;
-  box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
-  border-radius: 50px;
-  cursor: pointer;
-}
-.nav-2 .input:focus,
-.input:not(:invalid) {
-  width: min(200px,100%);
-  cursor: text;
-  box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
-}
-.nav-2 .input:focus + .icon-mobile-sm,
-.nav-2 .input:not(:invalid) + .icon-mobile-sm {
-  pointer-events: all;
-  cursor: pointer;
-}
+
 .container .icon-mobile-sm {
   position: absolute;
   width: var(--size-button);
@@ -183,9 +154,7 @@ html{
   display: flex;
   justify-content: space-around;
 }
-.header-main ul li{
-  
-}
+
 .header-main ul li a{
   display: flex;
   /* padding: 8px 12px; */
@@ -299,6 +268,9 @@ html{
   .header-top .nav-link-header .nav-1 li:nth-child(n+2) {
     display: none;
 }
+  .header-top .nav-link-header .nav-1 li:nth-child(3){
+    display: flex;
+  }
   .header-top .nav-link-header .nav-2{
     display: flex;
   }
