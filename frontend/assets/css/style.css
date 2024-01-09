@@ -159,7 +159,7 @@ html{
 
 .header-main ul li a{
   display: flex;
-  /* padding: 8px 12px; */
+  padding: 4px 8px;
   color: black;
   font-size: 0.875rem;
   font-weight: 500;
