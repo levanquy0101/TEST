@@ -174,12 +174,12 @@ i.ri-love-line{
         min-width: 170px;
         font-size: 0.75rem;
     }
-}
-@media screen and (max-width: 768px) {
     /* Hiển thị 3 sản phẩm trên 1 hàng */
     .product {
         width: 32.3%;
     }  
+}
+@media screen and (max-width: 768px) {
 }
 @media screen and (max-width : 534px){
     #container{
