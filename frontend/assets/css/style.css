@@ -315,11 +315,15 @@ html{
     line-height: 30px;
   } 
   .header-main ul{
-      display: flex;
-      align-items: center;
-    }
+    display: flex;
+    align-items: center;
+  }
+  .nav-link-header ul li:nth-child(3){
+    width: 100%;
+  }
   .nav-link-header .group{
     width: min(300px,100%);
+    width: 150%;
   }
   .header-top .nav-link-header ul li:first-child a{
     font-size: 0;
