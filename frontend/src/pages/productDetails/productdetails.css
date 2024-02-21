@@ -1,0 +1,264 @@
+.detail__main {
+  /* background-color: yellowgreen; */
+  margin-top: 60px;
+  padding: 0 90px;
+}
+
+.detail__container {
+  /* background-color: palevioletred; */
+  display: flex;
+  flex-direction: column;
+}
+
+.detail__left {
+  /* background-color: goldenrod; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail__img {
+  width: 45%;
+  height: 30%;
+  margin-top: 50px;
+  /* background-color: rgb(208, 248, 168); */
+}
+
+.product__details {
+  margin-top: 50px;
+  background-color: rgb(231, 231, 231);
+  width: 50%;
+  padding: 10px 0 0 20px;
+}
+
+.product__rating {
+  /* background-color: gold; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.price__category {
+  /* background-color: green; */
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.product__details h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.product__details i {
+  color: coral;
+}
+
+.product__details p span {
+  color: coral;
+}
+
+.product__price {
+  padding-top: 20px;
+  padding-right: 20px;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.shortDesc {
+  position: relative;
+  left: -8px;
+  color: var(--line-text);
+  margin-bottom: 10px;
+}
+
+.social__media {
+  margin-top: 20px;
+  display: flex;
+  /* background-color: #c31425; */
+  width: 35%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social__media .social__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+}
+
+.tab__wrapper {
+  display: flex;
+  width: 230px;
+  /* background-color: #c31425; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tab__wrapper h5 {
+  font-size: 18px;
+}
+
+.tab__wrapper h6 {
+  font-size: 17px;
+}
+
+.social__media .social__link i {
+  font-size: 25px;
+}
+
+.social__media h4 {
+  font-weight: 500;
+}
+
+.service__policy {
+  padding-top: 10px;
+  /* background-color: goldenrod; */
+  margin-bottom: 20px;
+}
+
+.service__policy .box {
+  width: 28%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service__policy .box p {
+  color: var(--line-text);
+}
+
+.service__policy .box i {
+  font-size: 35px;
+}
+
+.rating__group span i {
+  color: coral;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.category {
+  position: relative;
+  top: 12px;
+}
+
+.detail__left img {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.active__tab {
+  color: green;
+}
+
+.tab__content p {
+  line-height: 30px;
+}
+
+.reviews__wrapper ul li span {
+  color: coral;
+  font-weight: 6000;
+}
+
+.reviews__wrapper ul li p {
+  margin-top: 10px;
+}
+
+.review__form {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.review__form h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.form__group input,
+.form__group textarea {
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  padding: 8px 20px;
+}
+
+.form__group input:focus {
+  outline: none;
+}
+
+.form__group {
+  margin-bottom: 30px;
+}
+
+.related__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 60px;
+  color: #c31425;
+}
+
+.list__products {
+  position: relative;
+  /* background-color: crimson; */
+  /* height: 250px; */
+  top: 50px;
+}
+
+.desc__reviews {
+  position: relative;
+  top: -150px;
+}
+
+.quantity-container {
+  /* background-color: rebeccapurple; */
+  margin-top: 15px;
+  width: 150px;
+}
+
+.quantity-btn {
+  padding: 0.7px 10px;
+  border: 1px solid grey;
+  color: #222;
+}
+
+.quantity-container input {
+  text-align: center;
+  justify-content: center;
+  border: none;
+  padding: 0.7px 0px 0.7px 10px;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  width: 70px;
+}
+
+.thumb {
+  width: 440px;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  cursor: pointer;
+  margin: 10px;
+  position: relative;
+  top: -50px;
+  /* border-top: 1px solid #555; */
+  padding: 15px 0px 0 0px;
+}
+
+.thumb img {
+  width: 90px;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border: 1px solid #666;
+  border-radius: 2px;
+}
+
+.thumb img.active {
+  border: 2px solid red;
+}
